@@ -1,29 +1,30 @@
 package com.example.testappp.data.repository
 
 
-import com.example.testappp.data.local.LocalDataRepository
-import com.example.testappp.data.local.model.Restaurant
+import com.example.testappp.data.local.AppDatabase
+import com.example.testappp.data.local.model.Restaurants
+import com.example.testappp.data.local.model.RestaurantsItem
 import com.example.testappp.data.service.Api
 import javax.inject.Inject
-import javax.inject.Singleton
 import retrofit2.Response
 
 
-@Singleton
 class DataRepository @Inject constructor(
-    val apiService: Api,
-    val localDataRepository: LocalDataRepository
+    private val apiService: Api,
+    private val localDataRepository: AppDatabase
 ) {
 
-    suspend fun getAllRestaurantsData(): List<Restaurant> {
-        return localDataRepository.getAllRestaurants()
+    private val restaurantsDatabase = localDataRepository.restaurantDao()
+
+    suspend fun getAllRestaurantsData(): List<RestaurantsItem> {
+        return restaurantsDatabase.getAllRestaurants()
     }
 
-    suspend fun insertRestaurants(restaurant: List<Restaurant>) {
-        return localDataRepository.insertRestaurants(restaurant)
+    suspend fun insertRestaurants(restaurant: List<RestaurantsItem>) {
+        return restaurantsDatabase.insertRestaurants(restaurant)
     }
 
-    suspend fun getAllRestaurantApi(): Response<Restaurant> {
+    suspend fun getAllRestaurantApi(): Response<Restaurants> {
         return apiService.getRestaurants()
     }
 }

@@ -1,9 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.chibatching.kotpref:kotpref:2.11.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c7155328602307dd1dea0265fbd9fd29/kotpref-2.11.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c7155328602307dd1dea0265fbd9fd29/kotpref-2.11.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c7155328602307dd1dea0265fbd9fd29/kotpref-2.11.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c324ebdd38991a17f8eab2d4446e3f1/kotpref-2.11.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/44ed142a430631f0811f30ed8f7c1aa9/kotpref-2.11.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c324ebdd38991a17f8eab2d4446e3f1/kotpref-2.11.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c324ebdd38991a17f8eab2d4446e3f1/kotpref-2.11.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.chibatching.kotpref/kotpref/2.11.0/1378c8f46cb18da6ff5bdc1cea1392232b711bed/kotpref-2.11.0-javadoc.jar!/" />
